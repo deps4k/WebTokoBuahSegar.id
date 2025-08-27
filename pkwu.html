@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toko Buah Segar</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f9fff5;
+      color: #333;
+    }
+
+    /* Header */
+    header {
+      background: #4CAF50;
+      color: #fff;
+      padding: 15px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 1.6rem;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffeb3b;
+    }
+
+    /* Banner */
+    .banner {
+      height: 300px;
+      background: url("https://images.unsplash.com/photo-1617196032917-8c5f5a2bb76d?auto=format&fit=crop&w=1400&q=80") center/cover no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    /* Produk */
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 40px auto;
+    }
+
+    .judul-section {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #4CAF50;
+    }
+
+    .produk-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .card-body h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      color: #ff5722;
+      font-size: 1.1rem;
+      font-weight: bold;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #4CAF50;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #45a049;
+    }
+
+    /* Footer */
+    footer {
+      background: #4CAF50;
+      color: #eee;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Toko Buah Segar</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Beranda</a></li>
+        <li><a href="#">Produk</a></li>
+        <li><a href="#">Tentang</a></li>
+        <li><a href="#">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Banner -->
+  <section class="banner">
+    Buah Segar, Sehat & Berkualitas 🍎🍊🍇
+  </section>
+
+  <!-- Produk -->
+  <div class="container">
+    <h2 class="judul-section">Produk Kami</h2>
+    <div class="produk-grid">
+      <div class="card">
+        <img src="c:\Users\28\Downloads\istockphoto-184276818-612x612.jpg" alt="Apel Merah">
+        <div class="card-body">
+          <h3>Apel Merah</h3>
+          <p class="price">Rp 25.000 / kg</p>
+          <a href="paymen.html" class="btn">Beli Sekarang</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="c:\Users\28\Downloads\559462cc29b6859d04c98104aabe82a1.jpg" alt="Jeruk Manis">
+        <div class="card-body">
+          <h3>Jeruk Manis</h3>
+          <p class="price">Rp 20.000 / kg</p>
+          <a href="paymen.html" class="btn">Beli Sekarang</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="c:\Users\28\Downloads\foto-content-2023-06-06T171737675-Fisqiyyah-Awawin-3519491950.webp" alt="Anggur Ungu">
+        <div class="card-body">
+          <h3>Anggur Ungu</h3>
+          <p class="price">Rp 50.000 / kg</p> <a href="paymen.html" class="btn">Beli Sekarang</a>
+      </div>
+      </div>
+        </div>
+      </div>
+      
+    
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Toko Buah Segar. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
